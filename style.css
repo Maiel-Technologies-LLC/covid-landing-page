@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;  
+}
+
+body {
+    font-size: 16px;
+    color: #808080;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h1,h2 {
+    color: #6F42C1;
+    line-height: 1.5;
+}
+
+.small-text {
+    font-size: 12px;
+    color: #B29BDE;
+}
+
+.btn-primary {
+    background-color: #6F42C1;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 19.5px;
+}
+
+.nav-bar {
+    background-color: #F0EBF9;
+    display: none;
+    width: 100%;
+    margin-top: 40px;
+    position: absolute;
+    z-index: 1000;
+    padding: 10px 0px;
+    opacity: 0.9;
+}
+
+#ham-toggle {
+    display:none;
+}
+
+.ham-icon {
+    padding: 10px 0px;
+}
+
+.fa-bars {
+    color: #6F42C1;
+}
+
+#ham-toggle:checked ~ .nav-bar  {
+    display: block;
+}
+
+.header {
+    background-color: #F0EBF9;
+    display: grid;
+    grid-template-columns: 90% 1fr;
+}
+
+
+.logo {
+    padding: 20px 50px;
+    color: #000000;
+}
+
+.purple-dot {
+    color: #6F42C1;
+}
+
+.menu-item, a {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2;
+    color: #545257;
+}
+
+.menu-item> a:active, a:hover {
+    color: #000000;
+    font-weight: 500;
+}
+
+.banner-section {
+    background: url(./images/banner-bg.png);
+    background-color: #F0EBF9;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding: 0px 30px 100px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-image {
+    width: 400px;
+}
+
+@media all and (min-width: 800px) {
+
+    .ham-icon {
+        display: none;
+    }
+
+    .nav-bar {
+        display: block;
+        position: relative;
+        margin-top: 0px;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 80px
+    }
+
+    .menu-item {
+        padding: 0px 20px;
+    }
+
+    .header {
+        display: flex;        
+    }
+
+    .banner-image {
+        display: none;
+    }
+
+    .banner-section {
+        background: url(./images/banner-bg-main.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        padding: 50px 50px 250px 300px;
+        display: block;
+    }
+}
