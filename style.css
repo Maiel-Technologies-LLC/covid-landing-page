@@ -22,6 +22,12 @@ h1,h2 {
     line-height: 1.5;
 }
 
+.title-link {
+    font-size: 18px;
+    color: #6F42C1;
+    font-weight: bold;
+}
+
 .small-text {
     font-size: 12px;
     color: #B29BDE;
@@ -107,6 +113,30 @@ h1,h2 {
     width: 400px;
 }
 
+.news-articles-section {
+    margin: 50px 50px;
+    text-align: center;
+}
+
+.article-card {
+    margin: 40px 0px;
+}
+
+.article-img {
+    width: 100%;
+}
+
+.date-tag {
+    background-color: #6F42C1;
+    color: #FFFFFF;
+    display: block;
+    margin-top: -31px;
+    position: absolute;
+   
+    padding: 4px 8px;
+
+}
+
 @media all and (min-width: 800px) {
 
     .ham-icon {
@@ -144,5 +174,16 @@ h1,h2 {
         background-position: bottom;
         padding: 50px 50px 250px 300px;
         display: block;
+    }
+
+    .news-articles-section {
+        margin: minmax(100px, 300px);
+    }
+
+    .articles {
+        margin: 0px 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 }
