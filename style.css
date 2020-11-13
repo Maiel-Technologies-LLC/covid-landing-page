@@ -64,6 +64,15 @@ h1,h2 {
     color: #6F42C1;
 }
 
+.fa-check-circle {
+    color: limegreen;
+    padding-right: 5px;
+}
+.fa-times {
+    color: red;
+    padding-right: 5px;
+}
+
 #ham-toggle:checked ~ .nav-bar  {
     display: block;
 }
@@ -134,6 +143,33 @@ h1,h2 {
     position: absolute;
    
     padding: 4px 8px;
+}
+
+.protect-section {
+    padding: 80px 50px;
+}
+
+.protect-img {
+    width: 350px;
+    padding: 40px 0px;
+    
+}
+
+.protect-list {
+    display: flex;
+    line-height: 2.5;
+}
+
+.protect-list-left {
+    text-align: left;
+}
+
+.protect-list-right {
+    text-align: left;
+}
+
+.protect-list-item {
+    list-style: none;
 
 }
 
@@ -186,4 +222,29 @@ h1,h2 {
         justify-content: space-evenly;
         align-items: center;
     }
+    
+    .protect-bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "listLeft listRight";
+        padding: 100px 50px;
+    }
+
+    .protect-img {
+        grid-area: listRight;
+        padding: 0%;
+        width: 500px;
+
+    }
+
+    .protect-list{
+        grid-area: listLeft;
+    }
+
+    .protect-section {
+        padding: 100px 200px;
+    }
+
+
+
 }
