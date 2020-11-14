@@ -27,6 +27,15 @@ h1,h2 {
     color: #B29BDE;
 }
 
+.bold-text {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.black-text {
+    color: #000000;
+}
+
 .btn-primary {
     background-color: #6F42C1;
     border: none;
@@ -107,6 +116,35 @@ h1,h2 {
     width: 400px;
 }
 
+.stat-section {
+    padding: 50px 40px;
+}
+
+.stat-virus {
+    text-align: center;
+}
+
+.stat-info {
+    text-align: center;
+}
+
+.stat-rona-right-section > ul {
+   list-style: none;
+   line-height: 3em;
+}
+
+.rona-img {
+    width: 400px;
+}
+
+.stat-padding {
+    padding-top: 40px;
+}
+
+.stat-virus-padding {
+    padding-top: 40px;
+}
+
 @media all and (min-width: 800px) {
 
     .ham-icon {
@@ -145,4 +183,39 @@ h1,h2 {
         padding: 50px 50px 250px 300px;
         display: block;
     }
+
+    .stat-virus {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 500px));
+        justify-content: center;
+    }
+
+    .stat-rona {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        padding: 50px 130px;
+    }
+
+    .rona-img {
+        width: 550px;
+    }
+
+    .stat-info {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        justify-content: space-evenly;
+    }
+
+    .stat-padding {
+        padding: 0px;
+    }
+
+    .stat-rona-right-section > ul {
+        padding: 0px;
+    }
+
 }
+
+
