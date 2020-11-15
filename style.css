@@ -46,6 +46,15 @@ h1,h2 {
     color: #B29BDE;
 }
 
+.bold-text {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.black-text {
+    color: #000000;
+}
+
 .btn-primary {
     background-color: #6F42C1;
     border: none;
@@ -81,6 +90,11 @@ h1,h2 {
     color: limegreen;
     padding-right: 5px;
 }
+
+.purple-check {
+    color: #6F42C1;
+}
+
 .fa-times {
     color: red;
     padding-right: 5px;
@@ -214,6 +228,49 @@ h1,h2 {
     text-align: center;
 }
 
+.bold-text-color{
+    color:  #6F42C1;
+}
+
+.prevention-section {
+    padding: 50px;
+    background-color: #F8F5FC;
+}
+
+.prevention-list> .prevention-list-item {
+    list-style: none;
+    line-height: 2em;    
+}
+
+.prevention-cards {
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.card {  
+    width: 213px;
+    border-radius: 5px;
+}
+
+.card-icon {
+    background-color: #CBBAE9;
+    height: 102px;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body {
+    background-color: #FFFFFF;
+    height: 120px;
+    padding: 20px;
+    font-size: 15px;
+}
+
 
 @media all and (min-width: 800px) {
 
@@ -285,6 +342,34 @@ h1,h2 {
 
     .protect-section {
         padding: 100px 200px;
+    }
+
+    .prevention-section {
+        display: grid;
+        grid-template-areas: "preventionCards preventionDesc" ;
+        grid-template-columns:  repeat(2, 1fr);
+    }
+
+    .prevention-cards {
+        padding: 0px 100px;
+        grid-area: preventionCards;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 0px;
+    }
+
+    .prevention-desc {
+        padding: 150px 50px;
+        grid-area: preventionDesc;
+    }
+
+    .card {
+        align-self: end;
+    }
+
+    .higher-card {
+        margin-bottom: 50px;
     }
 
     .footer-section {
