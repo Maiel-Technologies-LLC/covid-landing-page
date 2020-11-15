@@ -223,6 +223,9 @@ h1,h2 {
     text-align: center;
 }
 
+.bold-text-color{
+    color:  #6F42C1;
+}
 
 @media all and (min-width: 800px) {
 
