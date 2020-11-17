@@ -318,7 +318,7 @@ padding-right: 15px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "listLeft listRight";
-        padding: 100px 50px;
+        padding: 100px 5px;
     }
 
     .protect-img {
@@ -350,11 +350,15 @@ padding-right: 15px;
     }
 
     .symptoms-footer{
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: auto 300px;
+        grid-template-areas: "textLeft buttonRight";
+        padding: 100px 50px;
+
         }
 
     .symptoms-list{
+        margin-top: 30px;
       display: grid;
       grid-template-columns: auto auto;
     }
@@ -375,8 +379,16 @@ padding-right: 15px;
         padding: 0 10px;
     }
     
+    .textLeft{
+        grid-area: textLeft;
+        
+        padding-top: 30px;
+    }
+
     .helpLine-button{
-        justify-self: start;
+        
+        grid-area: buttonRight;
+        
     }    
 
 
