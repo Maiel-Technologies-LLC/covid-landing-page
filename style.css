@@ -4,6 +4,10 @@
     box-sizing: border-box;  
 }
 
+img {
+    max-width: 100%;
+}
+
 i {
     color: #CCC;
 }
@@ -272,6 +276,43 @@ h1,h2 {
 }
 
 
+.symptoms-section{
+    background-color: #F8F5FC;
+    padding: 80px 50px;
+}
+
+.symptoms-list{
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  
+
+}
+
+.symptoms-item-list{
+    background-color: white;
+    padding: 10px;
+}
+
+.symptoms-footer{
+    padding: 50px 0px;
+   
+}
+
+.helpLine-button{
+    border-radius: 40px;
+    width: 150px;
+    height: 40px;
+    border: thin;
+    background-color:  #6f42c1;
+    margin-top: 20px;
+    
+    
+} 
+.fa-phone{
+padding-right: 15px;
+}
+
 @media all and (min-width: 800px) {
 
     .ham-icon {
@@ -326,7 +367,7 @@ h1,h2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "listLeft listRight";
-        padding: 100px 50px;
+        padding: 100px 5px;
     }
 
     .protect-img {
@@ -384,6 +425,48 @@ h1,h2 {
         text-align: left;
         color: #000000;
     }
+
+    .symptoms-footer{
+        display: grid;
+        grid-template-columns: auto 300px;
+        grid-template-areas: "textLeft buttonRight";
+        padding: 100px 50px;
+
+        }
+
+    .symptoms-list{
+        margin-top: 30px;
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+
+
+    .symptoms-items-list-p{
+        text-align: center;
+        padding-top: 30px;
+        margin-right: 30px;
+    }
+
+    .symptoms-item-list{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .symptoms-image{
+        padding: 0 10px;
+    }
+    
+    .textLeft{
+        grid-area: textLeft;
+        
+        padding-top: 30px;
+    }
+
+    .helpLine-button{
+        
+        grid-area: buttonRight;
+        
+    }    
 
 
 }
