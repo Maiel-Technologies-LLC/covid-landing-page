@@ -114,7 +114,6 @@ h1,h2 {
     grid-template-columns: 90% 1fr;
 }
 
-
 .logo {
     padding: 20px 50px;
     color: #000000;
@@ -193,16 +192,14 @@ h1,h2 {
 
 .protect-list-left {
     text-align: left;
+    list-style: none;
 }
 
 .protect-list-right {
     text-align: left;
-}
-
-.protect-list-item {
     list-style: none;
-
 }
+
 
 .footer-section {
     margin: 100px 50px;
@@ -232,7 +229,7 @@ h1,h2 {
     text-align: center;
 }
 
-.bold-text-color{
+.bold-text-color {
     color:  #6F42C1;
 }
 
@@ -241,9 +238,10 @@ h1,h2 {
     background-color: #F8F5FC;
 }
 
-.prevention-list> .prevention-list-item {
+.prevention-list {
     list-style: none;
-    line-height: 2em;    
+    line-height: 2em;
+    padding: 0px;    
 }
 
 .prevention-cards {
@@ -276,41 +274,72 @@ h1,h2 {
 }
 
 
-.symptoms-section{
+.symptoms-section {
     background-color: #F8F5FC;
     padding: 80px 50px;
 }
 
-.symptoms-list{
+.symptoms-list {
     display: grid;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
-  
-
 }
 
-.symptoms-item-list{
+.symptoms-item-list {
     background-color: white;
     padding: 10px;
 }
 
-.symptoms-footer{
+.symptoms-footer {
     padding: 50px 0px;
    
 }
 
-.helpLine-button{
+.helpLine-button {
     border-radius: 40px;
     width: 150px;
     height: 40px;
     border: thin;
     background-color:  #6f42c1;
     margin-top: 20px;
-    
-    
 } 
-.fa-phone{
-padding-right: 15px;
+
+.fa-phone {
+    padding-right: 15px;
+}
+
+.stat-section {
+    padding: 50px;
+}
+
+.stat-virus {
+    padding: 50px;
+    text-align: center;
+}
+
+.stat {
+    padding: 15px;
+}
+
+.coronavirus-details {
+    padding: 20px 0px;
+}
+
+.coronavirus-list {
+    padding: 0px;
+    line-height: 40px;
+    list-style: none;
+}
+
+.coronavirus-highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight {
+    display: flex;
+    padding: 20px 0px;
 }
 
 @media all and (min-width: 800px) {
@@ -367,22 +396,24 @@ padding-right: 15px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "listLeft listRight";
-        padding: 100px 5px;
+        padding: 30px 0px;
     }
 
     .protect-img {
         grid-area: listRight;
         padding: 0%;
-        width: 500px;
-
+        width: 400px;
     }
 
     .protect-list{
         grid-area: listLeft;
+        align-self: center;
+        justify-self: center;
     }
 
     .protect-section {
         padding: 100px 200px;
+        text-align: center;
     }
 
     .prevention-section {
@@ -468,5 +499,22 @@ padding-right: 15px;
         
     }    
 
+    .stat-virus {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .coronavirus-section {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .coronavirus-highlights {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 50px 0px;
+    }
 
 }
